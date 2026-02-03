@@ -5,7 +5,7 @@ import 'package:crypto/crypto.dart';
 import 'package:encrypt/encrypt.dart' as encrypt;
 
 void main() {
-  final pass = '8 a garibaldi';
+  final pass = '8 a garibaldi?';
   final titleText = 'Bisogna riprendere! Buon compleanno <3';
   final secretContent = 'Codice: 123';
 
