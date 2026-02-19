@@ -4,20 +4,31 @@
         {
             "id": 1,
             "title": "Primo Indovinello",
-            "question": "Nato in terre vichinghe nel novanta,\nil mio nome è una coppia che di stile ne vanta.\nCinque marchi in uno per ogni occasione,\ndai jeans al completo con grande passione.\nSe del denim sei il re e della moda il cultore,\nchi sono io, il tuo stile migliore?",
+            "question": "Sembriamo usciti da un pub londinese\nMa il nostro cuore batte altrove in segreto\nNati sul finire del secolo che svanisce\nCi dividiamo ma restiamo un unico concetto\nDue nomi comuni, un’unica identità\nChi siamo?",
             "solution": "Jack and Jones"
         },
         {
             "id": 2,
             "title": "Secondo Indovinello",
-            "question": "Vado veloce ma non ho gambe,\nsegno il tempo ma non ho mani.\nSono prezioso ma non si può vendere,\ne se mi perdi non torni a domani.",
-            "solution": "Tempo"
+            "question": "Chi ha organizzato ogni dettaglio con cura\nChi ha affiancato e confermato ogni scelta\nUno è più vicino di quanto sembri, l’altra lavora in parallelo\nDue nomi dietro il regalo\nChi siamo?",
+            "solution": [
+                [
+                    "Mattia",
+                    "Tia",
+                    "Matti",
+                    "Toto"
+                ],
+                [
+                    "Elisa",
+                    "Eli"
+                ]
+            ]
         },
         {
             "id": 3,
             "title": "Terzo Indovinello",
-            "question": "In casa mi trovi, ma non in cucina,\nson morbida e calda, dalla sera alla mattina.\nSotto di me un segreto è celato,\nnel posto dove il sonno è cullato.",
-            "solution": "Poltrona"
+            "question": "Non è dove scorre l’acqua a lavare le mani\nNon è tra i tessuti che aspettano calore\nNon si trova sui ripiani pieni di oggetti strani\nMa in un angolo ristretto dove resta il tuo tesoro senza rumore",
+            "solution": "Doccia"
         }
     ],
     "conclusion": {

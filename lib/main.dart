@@ -272,9 +272,25 @@ class _RiddleScreenState extends State<RiddleScreen> {
 
   void _checkAnswer() {
     final userAnswer = _normalize(_controller.text.trim());
-    final correctAnswer = _normalize(widget.riddle['solution'] as String);
+    final dynamic solutionData = widget.riddle['solution'];
 
-    if (userAnswer == correctAnswer) {
+    bool isCorrect = false;
+
+    if (solutionData is String) {
+      isCorrect = userAnswer == _normalize(solutionData);
+    } else if (solutionData is List) {
+      // Se è una lista, ci aspettiamo che sia una lista di gruppi di alternative.
+      // Ogni gruppo deve avere almeno una parola chiave presente nella risposta.
+      isCorrect = solutionData.every((group) {
+        if (group is List) {
+          return group.any((alt) => userAnswer.contains(_normalize(alt.toString())));
+        }
+        // Se l'elemento della lista non è una lista, deve essere contenuto nella risposta
+        return userAnswer.contains(_normalize(group.toString()));
+      });
+    }
+
+    if (isCorrect) {
       setState(() {
         _feedback = 'Risposta Corretta!';
         _isError = false;
