@@ -1,5 +1,5 @@
-name: buddy_meme
-description: "A new Flutter project."
+name: simo_site
+description: "Simo website"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -34,8 +34,6 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
-  encrypt: ^5.0.3
-  crypto: ^3.0.7
 
 dev_dependencies:
   flutter_test:
@@ -61,11 +59,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/imgs/typing.png
-    - assets/imgs/correct.png
-    - assets/imgs/wrong.png
-    - assets/secrets/secrets.json
-    - assets/secrets/listen.txt
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -94,9 +88,9 @@ flutter:
   # see https://flutter.dev/to/font-from-package
 
 flutter_launcher_icons:
-  image_path: "assets/imgs/typing.png"
+  image_path: ""
   web:
     generate: true
-    image_path: "assets/imgs/typing.png"
+    image_path: ""
     background_color: "#0175C2"
     theme_color: "#0175C2"
