@@ -4,13 +4,13 @@
         {
             "id": 1,
             "title": "Primo Indovinello",
-            "question": "Sembriamo usciti da un pub londinese\nMa il nostro cuore batte altrove in segreto\nNati sul finire del secolo che svanisce\nCi dividiamo ma restiamo un unico concetto\nDue nomi comuni, un’unica identità\nChi siamo?",
+            "question": "Tra felpe e jeans son sempre presente,\nse vuoi fare il figo… è la scelta intelligente",
             "solution": "Jack and Jones"
         },
         {
             "id": 2,
             "title": "Secondo Indovinello",
-            "question": "Chi ha tessuto il pensiero con ingegno\nChi ha guidato il dono con ardimento\nUno è più vicino di quanto sembri\nL’altra lavora in parallelo con accento\nChi siamo?",
+            "question": "Uno ti conosce da quando eri piccino, l’altra é arrivata un po più tardi ed insieme allo spritzino",
             "solution": [
                 [
                     "Mattia",
@@ -27,7 +27,7 @@
         {
             "id": 3,
             "title": "Terzo Indovinello",
-            "question": "Non è dove scorre l’acqua a lavare le mani\nNon è tra i tessuti che aspettano calore\nNon si trova sui ripiani pieni di oggetti strani\nMa in un angolo ristretto dove resta il tuo tesoro senza rumore",
+            "question": "Se canti Alfa e Sarah Toscano senza timore,\nproprio lì il regalo ti aspetta con calore",
             "solution": "Doccia"
         }
     ],
