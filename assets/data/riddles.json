@@ -1,0 +1,31 @@
+{
+    "introduction": "Benvenuto al gioco del regalo",
+    "riddles": [
+        {
+            "id": 1,
+            "title": "Primo Indovinello",
+            "question": "Nato in terre vichinghe nel novanta,\nil mio nome è una coppia che di stile ne vanta.\nCinque marchi in uno per ogni occasione,\ndai jeans al completo con grande passione.\nSe del denim sei il re e della moda il cultore,\nchi sono io, il tuo stile migliore?",
+            "solution": "Jack and Jones"
+        },
+        {
+            "id": 2,
+            "title": "Secondo Indovinello",
+            "question": "Vado veloce ma non ho gambe,\nsegno il tempo ma non ho mani.\nSono prezioso ma non si può vendere,\ne se mi perdi non torni a domani.",
+            "solution": "Tempo"
+        },
+        {
+            "id": 3,
+            "title": "Terzo Indovinello",
+            "question": "In casa mi trovi, ma non in cucina,\nson morbida e calda, dalla sera alla mattina.\nSotto di me un segreto è celato,\nnel posto dove il sonno è cullato.",
+            "solution": "Poltrona"
+        }
+    ],
+    "conclusion": {
+        "title": "Complimenti!",
+        "text": "Buon compleanno Mone",
+        "signatures": [
+            "Tia",
+            "Eli"
+        ]
+    }
+}
