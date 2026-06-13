@@ -1,41 +1,45 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="it">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
+  <script>
+    (function() {
+      const curTheme = localStorage.getItem('trip_theme');
+      if (curTheme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+      }
+    })();
+  </script>
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Buddy Meme - Accesso Riservato">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="gift_site">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png" />
-
-  <title>Buddy Meme</title>
-  <link rel="manifest" href="manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spagna 2026 — Trip Planner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" crossorigin src="./assets/index-P3-BRyQt.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BJsbdYE3.css">
 </head>
-
 <body>
-  <script src="flutter_bootstrap.js" async></script>
-</body>
 
+  <!-- LOADING OVERLAY -->
+  <div id="loading-overlay" style="position:fixed; inset:0; background:#f9f7f4; z-index:9999; display:flex; flex-direction:column; align-items:center; justify-content:center; transition:opacity 0.4s ease; font-family:'Inter', sans-serif;">
+    <div style="margin-bottom:1.2rem; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15)); animation: pulse 1.5s infinite; width: 4.5rem; height: 3rem; margin-left: auto; margin-right: auto; border-radius: 4px; overflow: hidden;">
+      <svg class="spain-flag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" style="width: 100%; height: 100%; display: block;">
+        <path fill="#C8102E" d="M0 0h3v2H0z"/>
+        <path fill="#FFD100" d="M0 .5h3v1H0z"/>
+      </svg>
+    </div>
+    <div style="font-weight:600; color:#1a1a2e; font-size:1.1rem; margin-bottom:0.4rem;">Caricamento itinerario...</div>
+    <div style="font-size:0.83rem; color:#6b7280;">Sincronizzazione cloud in corso</div>
+    <style>
+      @keyframes pulse {
+        0% { transform: scale(1); opacity: 0.7; }
+        50% { transform: scale(1.12); opacity: 1; }
+        100% { transform: scale(1); opacity: 0.7; }
+      }
+    </style>
+  </div>
+
+  <div id="root"></div>
+</body>
 </html>
