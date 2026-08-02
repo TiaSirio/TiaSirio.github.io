@@ -1,16 +1,19 @@
-# gift_site
+# Tiasirio.github.io
 
-A new Flutter project.
+Repo pubblica usata per ospitare i build statici di alcuni progetti tramite GitHub Pages.
 
-## Getting Started
+I sorgenti dei progetti si trovano in repo private separate. Questa repo contiene solo gli output di build, pubblicati in sottocartelle.
 
-This project is a starting point for a Flutter application.
+## Struttura
 
-A few resources to get you started if this is your first Flutter project:
+```
+/
+├── index.html        sito principale (TiaSirio.github.io)
+├── sito-1/        build del progetto React (TiaSirio.github.io/sito-1)
+└── sito-2/      build del progetto Flutter (TiaSirio.github.io/sito-2)
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Note
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- I contenuti di questa repo vengono aggiornati tramite build eseguiti nei rispettivi repo sorgente.
+- Non modificare direttamente i file nelle sottocartelle: verranno sovrascritti al prossimo deploy.
